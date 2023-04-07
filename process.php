@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $option = $_POST['option'];
 
     // Setzen Sie hier Ihren OpenAI-API-Schlüssel und den Endpunkt ein
-    $api_key = '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';
+    $api_key = 'YOUR API KEY HERE';
     $url = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
     $headers = array(
         "Content-Type: application/json",
