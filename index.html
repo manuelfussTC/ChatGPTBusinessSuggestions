@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textanalyse-Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+<header>
+    <!-- ... -->
+    <div class="container">
+        <header>
+            <h1>Textanalyse-Tool</h1>
+        </header>
+        <!-- Lade-Indikator hinzufügen -->
+        <div class="loading-indicator" style="display: none;">
+            <div class="spinner"></div>
+            <p>Verarbeiten...</p>
+        </div>
+        <!-- ... -->
+    </div>
+    <!-- ... -->
+</header>
+
+<section id="input-section">
+    <form id="analysis-form" action="process.php" method="post">
+        <label for="text">Text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="option">Option auswählen:</label><br>
+        <select id="option" name="option">
+            <option value="summary">Zusammenfassung</option>
+            <option value="suggestions">Geschäftsvorschläge</option>
+        </select><br><br>
+
+        <input type="submit" value="Senden" id="submit-button">
+    </form>
+</section>
+
+<section id="result">
+    <!-- Ergebnisse und vorgeschlagene Optionen werden hier angezeigt -->
+</section>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>

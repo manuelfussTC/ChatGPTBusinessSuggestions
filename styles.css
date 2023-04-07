@@ -1,0 +1,142 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 50px auto;
+}
+
+header {
+    background-color: #0071E5; /* Shopware-Blau */
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-section textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    resize: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-section select {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-section button {
+    background-color: #0071E5; /* Shopware-Blau */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestion-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    background-color: #0071E5; /* Shopware-Blau */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.suggestion-item:hover {
+    background-color: #005bb2;
+}
+
+.result-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.result-section h3 {
+    color: #0071E5; /* Shopware-Blau */
+}
+
+.result-section pre {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #333;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Lade-Indikator */
+.loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #0071E5; /* Shopware-Blau */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-indicator p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #0071E5; /* Shopware-Blau */
+}
+
